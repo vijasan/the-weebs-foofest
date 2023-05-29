@@ -1,0 +1,181 @@
+.container {
+  margin-top: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: black;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.title {
+  color: #ce5e4a;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #ce5e4a;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.practical-list {
+  list-style: none;
+  padding: 0;
+}
+
+.practical-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #fcf2c1;
+  padding-bottom: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.text {
+  font-size: 16px;
+  color: #fcf2c1;
+}
+
+.open {
+  background-color: black;
+  border-radius: 4px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.additionalInfo {
+  margin-top: 12px;
+  margin-bottom: 14px;
+  margin-left: 20px;
+  color: #fcf2c1;
+  font-size: 14px;
+}
+
+.mapContainer {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ce5e4a;
+  color: #fcf2c1;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.showButton:hover,
+.button:hover {
+  background-color: #ce5e4a;
+}
+
+.additionalInfo {
+  margin-top: 10px;
+  color: #fcf2c1;
+}
+
+.buttonContainer {
+  margin-top: 10px;
+}
+.locationContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.locationText {
+  margin-right: 10px;
+}
+
+.showButton {
+  margin-left: 10px;
+  display: inline-block;
+  background-color: #ce5e4a;
+  color: #fcf2c1;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hideButton {
+  margin-left: 10px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .mapContainer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .mapContainer {
+    height: 200px;
+  }
+}
+
+.plusSign {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.plusSign:hover,
+.practical-item:hover {
+  animation-name: plus;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes plus {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}

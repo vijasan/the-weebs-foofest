@@ -1,0 +1,124 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.label {
+  font-family: var(--font-headline);
+}
+
+.input {
+  background-color: #fafafa;
+  border: 1px solid #a9a9a9;
+  box-sizing: border-box;
+  color: #000;
+  height: 46px;
+  padding: 10px;
+  width: 100%;
+  font-family: var(--font-headline);
+}
+
+.button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--color-text);
+  font-family: var(--font-headline);
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--color-headline);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.button p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Subscribe";
+  width: 0%;
+  inset: 0;
+  color: var(--color-headline);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.button:hover::after {
+  width: 100%;
+}
+
+.button:hover p::before {
+  width: 100%;
+}
+
+.button:hover svg {
+  transform: translateX(4px);
+  color: var(--color-headline);
+}
+
+.button svg {
+  color: var(--color-text);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+
+.h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.confirmationPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.popupContent {
+  text-align: center;
+  color: #fff;
+}
+
+.popupImage {
+  width: 200px;
+  height: auto;
+  margin-bottom: 16px;
+  margin-left: 50px;
+}
